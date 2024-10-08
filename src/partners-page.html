@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { title: "Партнеры" })
+  <body>
+    @@include('html/header.html', { attr: 'marginbottom' })
+    <main class="partners">
+      <section class="partners__section">
+        <div class="container partners__container">
+          <div class="partners__content content">
+            <div class="content-left">
+              <p class="content-left__title setup--block-title">Партнеры</p>
+              <p class="content-left__subtitle setup--h2">
+                Ключевой фактор успеха нашей компании&nbsp;&mdash;
+                сотрудничество с&nbsp;надежными партнерами
+              </p>
+              <p class="content-left__text setup--text">
+                Наша компания успешно сотрудничает с проверенными и надежными
+                партнерами.<br />
+                Мы уверены в надежности и компетентности наших партнеров.
+              </p>
+              <div class="content-left__info info">
+                <div class="info-box">
+                  <p class="info-number setup--h1">7</p>
+                  <p class="info-text setup--text">лет успешного партнерства</p>
+                </div>
+                <div class="info-box">
+                  <p class="info-number setup--h1">312</p>
+                  <p class="info-text setup--text">совместных проектов</p>
+                </div>
+              </div>
+            </div>
+            <div class="content-right partners-grid">
+              @@include('html/partners.html', {
+              icon:"@img/partners/partners--nikoliers.svg" })
+              @@include('html/partners.html', { icon:
+              "@img/partners/partners--bmg.svg" })
+              @@include('html/partners.html', { icon:
+              "@img/partners/partners--corexp.svg" })
+              @@include('html/partners.html', { icon:
+              "@img/partners/partners--mrgroup.svg" })
+              @@include('html/partners.html', { icon:
+              "@img/partners/partners--vtb.svg" })
+              <!-- @@include('html/partners.html', { icon:
+              "@img/partners/partners--domrf.svg" })
+              @@include('html/partners.html', { icon:
+              "@img/partners/partners--mkb.svg" }) -->
+              <!-- @@include('html/partners.html', {
+              icon: "@img/partners/partners--hutton.svg" })
+              @@include('html/partners.html', { 
+                icon: "@img/partners/partners--hutton.svg" })
+              @@include('html/partners.html', { 
+                icon: "@img/partners/partners--hutton.svg" }) -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html', {}) @@include('html/foot.html',{})
+  </body>
+</html>

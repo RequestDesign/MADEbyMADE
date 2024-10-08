@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { title: "Партнеры" })
+  <body>
+    @@include('html/header.html', { attr: 'marginbottom' })
+    <main class="partners">
+      <section class="error-page">
+        <div class="container">
+          <div class="error-page__left">
+            <div class="error-page__type">страница не найдена</div>
+            <div class="error-page__number">404</div>
+            <div class="error-page__description">страница, которую вы запрашиваете, не существует</div>
+            <div class="error-page__text">Возможно страница устарела, была удалена, <br class="desktop"> или был введен неверный адрес в адресной строке.</div>
+            <a class="error-page__link">
+              <span>вернуться на главную</span>
+              <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="19.5" cy="19.5" r="19.5" fill="#F8EB00"/>
+                <path d="M14.293 24.7087L24.7096 14.292M24.7096 14.292H14.293M24.7096 14.292L24.7096 24.7087" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+          <div class="error-page__right">
+            <img src="./img/error.webp" alt="">
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html', {}) @@include('html/foot.html',{})
+  </body>
+</html>

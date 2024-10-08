@@ -1,0 +1,28 @@
+@import 'set';
+@import 'setup';
+@import 'fonts';
+@import 'animations';
+
+@import 'header';
+@import 'footer';
+
+@import 'main';
+
+@import 'partners';
+
+@import 'project';
+
+@import 'realty';
+
+@import 'about-us';
+
+@import 'subcategories';
+
+@import 'error';
+
+@import 'news';
+
+body {
+  color: $white-color;
+  background-color: $black-color;
+}

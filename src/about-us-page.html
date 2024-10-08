@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { title: "О нас" })
+  <body>
+    @@include('html/header.html', { attr: 'marginbottom' })
+    <main class="about-us">
+      <section class="about-us__section-first">
+        <div class="container about-us__container">
+          <div class="about-us__content content">
+            <div class="content-top">
+              <p class="content-top__title setup--block-title">O компании</p>
+              <p class="content-top__text setup--text">
+                MADE - инвестиционная компания, специализирующаяся на управлении
+                инвестициями в сфере недвижимости. Многолетний опыт команды
+                позволяет на базе собственной экспертизы активно наращивать и
+                управлять портфелем коммерческой недвижимости. В сотрудничестве
+                с крупнейшими девелоперами России реализовано множество успешных
+                проектов.
+              </p>
+            </div>
+            <div class="content-bottom">
+              <div class="about-us__movie">
+                <div class="content-bottom__background">
+                  <video
+                    autoplay="autoplay"
+                    loop="loop"
+                    muted="muted"
+                    preload="preload"
+                  >
+                    <source src="@img/movie/about-us.mp4" />
+                  </video>
+                  <img src="@img/about-us/about-us--backgroundPhoto-mobile.png" alt="">
+                </div>
+                <div class="content-bottom__box">
+                  <div class="content-bottom__info info">
+                    <p class="info-title setup--h3">Активы компании</p>
+                    <p class="info-text setup--text">
+                      Динамика роста активов является одним из ключевых
+                      показателей нашей успешной работы.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-us__section-second">
+        <div class="container about-us__container">
+          <div class="about-us-assets__content content">
+            <div class="content-left">
+              <p class="content-left__title setup--h5">
+                Рост активов компании происходит за&nbsp;счет следующих
+                составляющих:
+              </p>
+
+              <div class="about-us__chart chart">
+                <div class="chart-title">Рост активов компании</div>
+                <div class="chart-container">
+                  <div class="chart-data chart-axisY-data">
+                    <div class="chart-animation-block axisY">
+                      <div class="chart-animation-box axisY">
+                        <div class="chart-axisY-data-element">100%</div>
+                      </div>
+                    </div>
+                    <div class="chart-animation-block axisY">
+                      <div class="chart-animation-box axisY">
+                        <div class="chart-axisY-data-element">75%</div>
+                      </div>
+                    </div>
+                    <div class="chart-animation-block axisY">
+                      <div class="chart-animation-box axisY">
+                        <div class="chart-axisY-data-element">50%</div>
+                      </div>
+                    </div>
+                    <div class="chart-animation-block axisY">
+                      <div class="chart-animation-box axisY">
+                        <div class="chart-axisY-data-element">25%</div>
+                      </div>
+                    </div>
+                    <div class="chart-animation-block axisY">
+                      <div class="chart-animation-box axisY">
+                        <div class="chart-axisY-data-element">0%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chart-data chart-axisX-data">
+                    <div class="chart-animation-block axisX">
+                      <div class="chart-animation-box axisX">
+                        <div class="chart-axisX-data-element">2021</div>
+                      </div>
+                    </div>
+                    <div class="chart-animation-block axisX">
+                      <div class="chart-animation-box axisX">
+                        <div class="chart-axisX-data-element">2022</div>
+                      </div>
+                    </div>
+                    <div class="chart-animation-block axisX">
+                      <div class="chart-animation-box axisX">
+                        <div class="chart-axisX-data-element">2023</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chart-area">
+                    <div class="chart-line chart-axisY-line"></div>
+                    <div class="chart-line chart-axisX-line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="chart-area-points"></div>
+                    <div class="chart-canvas-box">
+                      <canvas class="chart-area-canvas"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <p class="content-left__text setup--h3">Рост активов компании</p> -->
+            </div>
+            <div class="content-right">
+              <div class="content-right__box">
+                <ul class="content-right__list list">
+                  <li class="list-item">
+                    <div class="list-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50"
+                        height="50"
+                        viewBox="0 0 50 50"
+                        fill="none"
+                      >
+                        <circle
+                          cx="12.5"
+                          cy="12.5"
+                          r="11.5"
+                          stroke="#7D7D7D"
+                          stroke-width="2"
+                        />
+                        <circle
+                          cx="12.5"
+                          cy="37.5"
+                          r="11.5"
+                          stroke="#7D7D7D"
+                          stroke-width="2"
+                        />
+                        <circle
+                          cx="37.5"
+                          cy="12.5"
+                          r="11.5"
+                          stroke="#7D7D7D"
+                          stroke-width="2"
+                        />
+                        <circle
+                          cx="37.5"
+                          cy="37.5"
+                          r="11.5"
+                          stroke="#7D7D7D"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <div class="list-info">
+                      <p class="list-title setup--h3">Устойчивость</p>
+                      <p class="list-text setup--text">
+                        Успешная стратегия инвестирования и доверие наших
+                        клиентов
+                      </p>
+                    </div>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50"
+                        height="50"
+                        viewBox="0 0 50 50"
+                        fill="none"
+                      >
+                        <circle
+                          cx="25"
+                          cy="25"
+                          r="24"
+                          stroke="#7D7D7D"
+                          stroke-width="2"
+                        />
+                        <rect
+                          x="24.707"
+                          y="24.707"
+                          width="24.2931"
+                          height="24.2931"
+                          stroke="#7D7D7D"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <div class="list-info">
+                      <p class="list-title setup--h3">Риски</p>
+                      <p class="list-text setup--text">
+                        Управление рисками, чтобы обеспечить стабильность
+                        <span class="visibility">нашей</span>
+                        компании
+                      </p>
+                    </div>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="53"
+                        height="52"
+                        viewBox="0 0 53 52"
+                        fill="none"
+                      >
+                        <path
+                          d="M27.1667 2L3 15.3333L27.1667 27.8333L50.5 15.3333L27.1667 2Z"
+                          stroke="#7D7D7D"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M27.1667 12.8333L3 26.1666L27.1667 38.6666L50.5 26.1666L27.1667 12.8333Z"
+                          stroke="#7D7D7D"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M27.1667 24.5L3 37.8333L27.1667 50.3333L50.5 37.8333L27.1667 24.5Z"
+                          stroke="#7D7D7D"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <div class="list-info">
+                      <p class="list-title setup--h3">Анализ</p>
+                      <p class="list-text setup--text">
+                        Тщательный анализ и выбор инвестиционных проектов
+                      </p>
+                    </div>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50"
+                        height="50"
+                        viewBox="0 0 50 50"
+                        fill="none"
+                      >
+                        <circle
+                          cx="25"
+                          cy="24"
+                          r="19"
+                          stroke="#7D7D7D"
+                          stroke-width="2"
+                        />
+                        <circle
+                          cx="20"
+                          cy="30"
+                          r="19"
+                          stroke="#7D7D7D"
+                          stroke-width="2"
+                        />
+                        <circle
+                          cx="30"
+                          cy="20"
+                          r="19"
+                          stroke="#7D7D7D"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <div class="list-info">
+                      <p class="list-title setup--h3">Доходность</p>
+                      <p class="list-text setup--text">
+                        Увеличение стоимости нашего портфеля
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html', {}) @@include('html/foot.html',{})
+  </body>
+</html>

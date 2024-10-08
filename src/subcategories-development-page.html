@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { title: "Подкатегория" })
+  <body>
+    @@include('html/header.html', { attr: "marginbottom" })
+    <main class="subcategories">
+      <section class="subcategories__section-first">
+        <div class="container subcategories__container">
+          <div class="subcategories__content content">
+            <div class="content-top">
+              <p class="content-top__title setup--h2">Девелопмент</p>
+              <div class="content-top__info info">
+                <div class="info__block">
+                  <div class="info__box">
+                    <p class="info__title">Количество проектов</p>
+                    <p class="info__value">250+</p>
+                  </div>
+                  <div class="info__box">
+                    <p class="info__title">Общая площадь</p>
+                    <p class="info__value">1 980 м&sup2;</p>
+                  </div>
+                </div>
+                <!-- @@include('html/button-yellow.html', { text:"Контакты" }) -->
+              </div>
+            </div>
+            <div class="content-bottom">
+              <div class="content-bottom__content content">
+                <div class="content-left">
+                  <p class="content-left__title setup--block-title">
+                    О стратегии
+                  </p>
+                  <p class="content-left__text setup--text">
+                    Цель состоит в&nbsp;достижении опережающего роста стоимости
+                    компании в&nbsp;долгосрочной перспективе
+                  </p>
+                </div>
+                <div class="content-right">
+                  @@include('html/subcategories-property.html', {
+                  icon:"propertyStability", title:"Устойчивость",
+                  text:"Cохранить финансовую устойчивость компании" })
+                  @@include('html/subcategories-property.html', {
+                  icon:"propertyEffectiveness", title:"Эффективность",
+                  text:"Повысить эффективность основных направлений бизнеса" })
+                  @@include('html/subcategories-property.html', {
+                  icon:"propertyProfitability", title:"Доходность",
+                  text:"Повысить доходность акционерного капитала" })
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subcategories__section-second">
+        <div class="container subcategories__container">
+          <div class="subcategories-projects__content content">
+            <p class="content__title setup--block-title">Наши проекты</p>
+            <p class="content__subtitle setup--h2">
+              Ознакомьтесь с проектами нашей инвестиционной компании и узнаете о
+              нас больше
+            </p>
+            <div class="content__filters filters setup--h5">
+                <a class="filters__button active">Показать все</a>
+                <a class="filters__button">Реализован</a>
+                <a class="filters__button">В стадии реализации</a>
+                <a class="filters__button">Жилая недвижимость</a>
+                <a class="filters__button">Комерческая недвижимость</a>
+            </div>
+            <div class="content__projects project">
+                @@include('html/subcategories-project.html', { 
+                version:"extend",
+                img:"subcategories--projectPhoto-1.png",
+                title:"ЖК Ясный",
+                location:"Москва",
+                area:"100",
+                textFirst:"Квартира имеет просторную планировку, предлагая комфортабельное проживание. Она состоит из 2 спален, 2 ванных комнат, просторной гостиной и отдельной кухни.",
+                textSecond:"Каждая комната продуманно спроектирована с учетом функциональности и эстетики. Квартира оснащена всеми необходимыми удобствами для комфортного проживания. Она включает современную кухню с бытовой техникой, кондиционеры/ Квартира имеет просторную планировку, предлагая комфортабельное проживание.",
+                status:"Реализован" })
+                                
+                @@include('html/subcategories-project.html', { 
+                version:"extend",
+                img:"subcategories--projectPhoto-1.png",
+                title:"ЖК Mitte",
+                location:"Москва",
+                area:"100",
+                textFirst:"Квартира имеет просторную планировку, предлагая комфортабельное проживание. Она состоит из 2 спален, 2 ванных комнат, просторной гостиной и отдельной кухни.",
+                textSecond:"Каждая комната продуманно спроектирована с учетом функциональности и эстетики. Квартира оснащена всеми необходимыми удобствами для комфортного проживания. Она включает современную кухню с бытовой техникой, кондиционеры/ Квартира имеет просторную планировку, предлагая комфортабельное проживание.",
+                status:"Реализован" })
+                
+                @@include('html/subcategories-project.html', { 
+                version:"extend",
+                img:"subcategories--projectPhoto-1.png",
+                title:"Бизнес-Центр Geolog",
+                location:"Москва",
+                area:"100",
+                textFirst:"Квартира имеет просторную планировку, предлагая комфортабельное проживание. Она состоит из 2 спален, 2 ванных комнат, просторной гостиной и отдельной кухни.",
+                textSecond:"Каждая комната продуманно спроектирована с учетом функциональности и эстетики. Квартира оснащена всеми необходимыми удобствами для комфортного проживания. Она включает современную кухню с бытовой техникой, кондиционеры/ Квартира имеет просторную планировку, предлагая комфортабельное проживание.",
+                status:"В стадии реализации",
+                stage:"develope" })
+            </div>
+            <div class="content__button">
+              <button class="setup--h5">Показать еще</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html', {}) @@include('html/foot.html',{ })
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

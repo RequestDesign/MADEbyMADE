@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { title: "Главная" })
+  <body>
+    @@include('html/header.html', { attr: "transparent"})
+    <main class="main">
+      <section class="main__section-first">
+        <div class="container main__container-first">
+          <div class="main__decoration-top setup--hover-grayscale">
+            <img
+              class=""
+              src="@img/main/main--s1_decoration-2.png"
+              alt=""
+            />
+          </div>
+          <div class="main__logotype">
+            <div class="wow animate__slideInLeft animate__delay-1s">
+              <svg class="logotype">
+                <use xlink:href="@img/sprite.svg#logotype-yellow"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="main__decoration-bottom setup--hover-grayscale">
+            <img
+              class=""
+              src="@img/main/main--s1_decoration-1.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section class="main__section-second">
+        <div class="container main__container-second">
+          <div class="custom-cursor">
+            <div class="circle">
+              <svg
+                width="61"
+                height="60"
+                viewBox="0 0 61 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M30.834 0.75C23.5151 0.75 16.8256 3.43712 11.6956 7.87962C5.50086 13.2441 1.58398 21.1642 1.58398 30C1.58398 46.1543 14.6797 59.25 30.834 59.25C46.9883 59.25 60.084 46.1543 60.084 30C60.084 13.8457 46.9883 0.75 30.834 0.75Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+            <div class="cursor">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="46"
+                viewBox="0 0 36 46"
+                fill="none"
+              >
+                <path
+                  d="M10.3783 16.0441L12.0308 22.2115C10.5457 20.704 8.26395 20.4485 6.73602 21.7869L6.71929 21.7716C6.71911 21.7718 6.71893 21.772 6.71875 21.7722L6.44164 22.0752C6.4412 22.0756 6.44077 22.0761 6.44034 22.0766L6.4824 22.1151C6.35341 22.3685 6.29572 22.6453 6.28792 22.9018C6.27622 23.287 6.37311 23.6997 6.59719 24.0543L9.94111 29.3461C10.5247 30.2697 11.6762 31.4532 12.5575 32.0074L12.5651 32.0122L12.5728 32.0168L12.5729 32.0168L12.5729 32.0168L12.5732 32.0171L12.5753 32.0183L12.5842 32.0236L12.6208 32.0456C12.6532 32.0653 12.7014 32.0945 12.7632 32.1325C12.8869 32.2084 13.0648 32.3189 13.2798 32.4559C13.7105 32.7305 14.2863 33.1095 14.8714 33.5294C15.4596 33.9517 16.0414 34.4041 16.4921 34.8257C16.7175 35.0366 16.8978 35.2283 17.0268 35.3946C17.1631 35.5701 17.2071 35.6727 17.2162 35.7067L17.6887 37.4703L17.8829 38.1947L18.6073 38.0006L24.4641 36.4313L26.0656 36.0022L27.3925 35.6466L28.8567 35.2543L29.5811 35.0602L29.387 34.3357L28.9144 32.5721C28.8569 32.3573 28.8394 31.8989 28.884 31.2329C28.9265 30.5989 29.0175 29.8683 29.122 29.1682C29.2261 28.4702 29.3419 27.8136 29.4319 27.3308C29.4769 27.0896 29.5152 26.8925 29.5423 26.7561C29.5558 26.6879 29.5665 26.6348 29.5738 26.5991L29.582 26.5588L29.584 26.5488L29.5845 26.5465L29.5846 26.546L29.5846 26.546L29.5846 26.5459L29.5863 26.5381L29.5877 26.5301C29.7867 25.4557 29.7174 23.7494 29.422 22.6467L27.4563 15.3106L27.4563 15.3106L27.453 15.2988C26.9145 13.4126 25.1214 12.0081 23.2396 12.5123C22.75 12.6435 22.3812 12.9401 22.1364 13.3198C21.3482 12.6592 20.3258 12.3475 19.2773 12.6284C18.7877 12.7596 18.4189 13.0562 18.1741 13.4359C17.3859 12.7753 16.3635 12.4636 15.315 12.7445C15.0679 12.8107 14.8516 12.9191 14.6664 13.059L12.8878 7.54018C12.484 6.28708 11.2576 5.28819 9.93686 5.6421C8.5824 6.00502 8.09505 7.52294 8.42943 8.77085L10.3783 16.0441Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+            <div class="effects" id="firework-effects">
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+            </div>
+          </div>
+
+          <div class="main__content content">
+            <a href="">
+              <div class="content__left-block content-custom-cursor">
+                <div class="content__background-left">
+                  <img
+                    class="picture _brightness setup--hover-grayscale"
+                    src="@img/main/main--s2_backgroundPhoto-1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content__info-left">
+                  <p class="content__title">О компании</p>
+                  <p class="content__text">
+                    Обладает большим опытом и&nbsp;экспертизой для достижения
+                    максимальной окупаемости и&nbsp;финансовой стабильности для
+                    наших клиентов
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="content__center-block content-custom-cursor">
+              <div class="content__background-center">
+                <img
+                  class="picture _brightness setup--hover-grayscale"
+                  src="@img/main/main--s2_backgroundPhoto-2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content__info-center">
+                <p class="content__title">Инвестиции</p>
+                <p class="content__text">
+                  Управление рисками, выбор активов и&nbsp;диверсификация
+                  портфеля являются ключевыми элементами инвестиционной
+                  стратегии
+                </p>
+              </div>
+            </div>
+            <div class="content__right-block">
+              <div class="swiper swiper-main-second">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slide-main-second">
+                      <img
+                        class="picture--special _brightness setup--hover-grayscale"
+                        src="@img/main/main--s2_swiperPhoto-1.jpg"
+                        alt=""
+                      />
+                      <div class="content__info-right">
+                        <div class="content__logotype swiper__logotype">
+                          <svg class="logotype">
+                            <use
+                              xlink:href="@img/sprite.svg#logotype-white"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="content__text swiper__text">
+                          <p class="swiper-slide-1"><span>10</span> лет</p>
+                          <p class="swiper-slide-1">
+                            <span>14</span> <br />
+                            отраслей
+                          </p>
+                          <p class="swiper-slide-1">
+                            <span>1066</span> <br />
+                            клиентов
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-main-second">
+                      <img
+                        class="picture--special _brightness setup--hover-grayscale"
+                        src="@img/main/main--s2_swiperPhoto-2.jpg"
+                        alt=""
+                      />
+                      <div class="content__info-right">
+                        <p class="content__title swiper__title">
+                          Проекты<br />Бизнес-центр Чайка-плаза
+                        </p>
+                        <div class="content__text swiper__text">
+                          <p class="swiper-slide-2">
+                            г. Москва, Варшавское шоссе, д. 25а, стр.6.
+                          </p>
+                          <p class="swiper-slide-2">
+                            Реконструирован в стиле «модерн» на базе корпусов в
+                            2008 году
+                          </p>
+                          <p class="swiper-slide-2">Площадь 23 000 кв.м.</p>
+                          <p class="swiper-slide-2">Бизнес-центр класса «B+»</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-main-second">
+                      <img
+                        class="picture--special _brightness setup--hover-grayscale"
+                        src="@img/main/main--s2_swiperPhoto-1.jpg"
+                        alt=""
+                      />
+                      <div class="content__info-right">
+                        <div class="content__logotype swiper__logotype">
+                          <svg class="logotype">
+                            <use
+                              xlink:href="@img/sprite.svg#logotype-white"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="content__text swiper__text">
+                          <p class="swiper-slide-1"><span>10</span> лет</p>
+                          <p class="swiper-slide-1">
+                            <span>14</span> <br />
+                            отраслей
+                          </p>
+                          <p class="swiper-slide-1">
+                            <span>1066</span> <br />
+                            клиентов
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination swiper-main-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html', {}) @@include('html/foot.html',{})
+  </body>
+</html>

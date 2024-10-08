@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { title: "Страница проекта" })
+  <body>
+    @@include('html/header.html', { })
+    <main class="project">
+      <div class="container project__container">
+        <div class="project__content content">
+          <div class="content-left">
+            <p class="content-left__title setup--block-title">
+              Офисная недвижимость
+            </p>
+            <p class="content-left__subtitle setup--h2">
+              Бизнес-центр чайка-плаза
+            </p>
+            <p class="content-left__text setup--text">
+              Квартира имеет просторную планировку, предлагая комфортабельное
+              проживание. Она состоит из&nbsp;2&nbsp;спален, 2&nbsp;ванных
+              комнат, просторной гостиной и&nbsp;отдельной кухни. Каждая комната
+              продуманно спроектирована с&nbsp;учетом функциональности
+              и&nbsp;эстетики.
+            </p>
+            @@include('html/project-statistics.html', { amount: 23000, count:
+            15, year: 2008, device: "desktop"})
+          </div>
+          <div class="content-right">
+            <div class="content-right__photos">
+              <div class="swiper swiper-project">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="swiper-project__slide">
+                      <img
+                        class="swiper-project__photo"
+                        src="@img/projects/project--swiperPhoto-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-project__slide">
+                      <img
+                        class="swiper-project__photo"
+                        src="@img/projects/project--swiperPhoto-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-project__slide">
+                      <img
+                        class="swiper-project__photo"
+                        src="@img/projects/project--swiperPhoto-3.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination swiper-project-pagination"></div>
+              </div>
+            </div>
+            <div class="content-right__info info">
+              <p class="info-address">
+                г. Москва, Варшавское шоссе, д. 25а, стр.6.
+              </p>
+              <div class="info-customers">
+                <p>Заказчик ООО “Чайка”</p>
+              </div>
+            </div>
+            @@include('html/project-statistics.html', { amount: 23000, count:
+            15, year: 2008, device: "mobile"})
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/footer.html', {}) @@include('html/foot.html',{})
+  </body>
+</html>

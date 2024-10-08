@@ -1,0 +1,45 @@
+@keyframes flipLogotype {
+  0% {
+    transform: rotateY(0deg);
+  }
+  20% {
+    transform: rotateY(-90deg);
+  }
+  30% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(-90deg);
+  }
+  60% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes moveLight {
+  0% {
+    transform: translateX(-35rem) skewX(45deg);
+  }
+  45% {
+    transform: translateX(40rem) skewX(45deg);
+  }
+  50% {
+    transform: translateX(45rem) skewX(45deg);
+  }
+  100% {
+    transform: translateX(120rem) skewX(45deg);
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

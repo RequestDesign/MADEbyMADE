@@ -1,0 +1,674 @@
+// color
+$white-color: #ffffff;
+$black-color: #101010;
+$dark-grey-color: #292929;
+$yellow-color: #f8eb00;
+$light-grey-color: #979797;
+$poluton-grey-color: #454545;
+
+// fonts
+.setup--h1 {
+  font-size: 5.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+  text-transform: uppercase;
+}
+.setup--h2 {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  text-transform: uppercase;
+}
+.setup--h3 {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.setup--h4 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.setup--h5 {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.setup--h6 {
+  font-size: 8.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 115%;
+  text-transform: uppercase;
+}
+.setup--text {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.setup--block-title {
+  color: $white-color;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 18px */
+  text-transform: uppercase;
+}
+.setup--section-title {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  text-transform: uppercase;
+}
+
+@media (max-width: 48em) {
+  .setup--h1 {
+    font-size: 8rem;
+  }
+  .setup--h2 {
+    font-size: 4rem;
+  }
+  .setup--h3 {
+    font-size: 3.6rem;
+  }
+  .setup--h4 {
+    font-size: 2.8rem;
+    line-height: normal;
+  }
+  .setup--h5 {
+    font-size: 2.8rem;
+    line-height: 120%;
+  }
+  .setup--text {
+    font-size: 2.8rem;
+    line-height: normal;
+  }
+  .setup--block-title {
+    font-size: 2.8rem;
+    line-height: 120%;
+  }
+  .setup--section-title {
+    font-size: 2.8rem;
+    line-height: 120%;
+  }
+}
+
+// button
+
+.setup--btn-black {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  cursor: pointer;
+  &:hover {
+    .text {
+      color: $light-grey-color;
+      transition: all 0.5s ease-in-out;
+    }
+    .btn {
+      background-color: $light-grey-color;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  .text {
+    color: $black-color;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.9rem;
+    height: 3.9rem;
+    border-radius: 50%;
+    background-color: $black-color;
+    .icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}
+
+.setup--btn-yellow {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  cursor: pointer;
+  &:hover {
+    .text {
+      color: $white-color;
+      transition: all 0.5s ease-in-out;
+    }
+    .btn {
+      background-color: $white-color;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  .text {
+    color: $yellow-color;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.9rem;
+    height: 3.9rem;
+    border-radius: 50%;
+    background-color: $yellow-color;
+    .icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .setup--btn-black {
+    gap: 2.2rem;
+    .text {
+      font-size: 2.8rem;
+    }
+    .btn {
+      width: 7.2rem;
+      height: 7.2rem;
+      .icon {
+        width: 4.6rem;
+        height: 4.6rem;
+      }
+    }
+  }
+  .setup--btn-yellow {
+    gap: 2.2rem;
+    .text {
+      font-size: 2.8rem;
+    }
+    .btn {
+      width: 7.2rem;
+      height: 7.2rem;
+      .icon {
+        width: 4.6rem;
+        height: 4.6rem;
+      }
+    }
+  }
+}
+
+// events
+
+.setup--hover-grayscale {
+  // position: relative;
+  filter: grayscale(90%);
+  &:hover {
+    filter: none;
+    transition: filter 0.5s ease-in-out;
+    will-change: filter;
+  }
+}
+
+// popup
+
+.filter-popup-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: $black-color;
+  opacity: 0.25;
+  z-index: 1100;
+}
+
+// swiper
+
+.swiper {
+  .swiper-pagination {
+    &-bullet {
+      width: 1.5rem;
+      height: 1.5rem;
+      opacity: 1;
+      border: 0.1rem solid $white-color;
+      background-color: transparent;
+      margin: 0 0.8rem !important;
+      &-active {
+        background-color: $white-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .swiper {
+    .swiper-pagination {
+      &-bullet {
+        width: 3rem;
+        height: 3rem;
+        opacity: 1;
+        border: 0.2rem solid $white-color;
+        background-color: transparent;
+        margin: 0 1.6rem !important;
+        &-active {
+          background-color: $white-color;
+        }
+      }
+    }
+  }
+}
+
+// cursor
+
+.custom-cursor {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  width: 6rem;
+  height: 6rem;
+  pointer-events: none;
+  .circle {
+    & > svg {
+      width: 6rem;
+      height: 6rem;
+      stroke-dasharray: 200;
+      animation: cursorCircle 1s ease forwards;
+      will-change: animation;
+    }
+  }
+  .cursor {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    &.show {
+      opacity: 1;
+      transition: opacity 0.25s ease;
+    }
+    &.click {
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      svg {
+        animation: cursorFingerClick 0.25s ease forwards;
+      }
+    }
+    & > svg {
+      width: 3.6rem;
+    }
+  }
+  .effects {
+    display: none;
+    position: absolute;
+    .explosion {
+      position: absolute;
+      width: 4px;
+      height: 3rem;
+      border-radius: 0.4rem;
+      transform-origin: 50% 100%;
+      overflow: hidden;
+      &:nth-child(1) {
+        transform: rotate(0deg) translateY(-1.5rem);
+      }
+      &:nth-child(2) {
+        transform: rotate(45deg) translateY(-1.5rem);
+      }
+      &:nth-child(3) {
+        transform: rotate(90deg) translateY(-1.5rem);
+      }
+      &:nth-child(4) {
+        transform: rotate(180deg) translateY(-1.5rem);
+      }
+      &:nth-child(5) {
+        transform: rotate(225deg) translateY(-1.5rem);
+      }
+      &:nth-child(6) {
+        transform: rotate(270deg) translateY(-1.5rem);
+      }
+      &:nth-child(7) {
+        transform: rotate(315deg) translateY(-1.5rem);
+      }
+    }
+  }
+  #firework-effects .explosion::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 1.5rem;
+    background-color: #ffffff;
+  }
+  #firework-effects {
+    left: 32%;
+    top: 15%;
+    transform: scale(0.25);
+  }
+  #firework-effects .explosion::before {
+    animation: cursorEffects 2s ease-in-out;
+  }
+}
+
+@keyframes cursorCircle {
+  0% {
+    stroke-dashoffset: 200;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes cursorFinger {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes cursorEffects {
+  0% {
+    top: 100%;
+  }
+  33%,
+  100% {
+    top: -50%;
+  }
+}
+
+@keyframes cursorFingerClick {
+  0% {
+    width: 3.6rem;
+  }
+  50% {
+    width: 3rem;
+  }
+  100% {
+    width: 3.6rem;
+  }
+}
+
+// chart
+
+.chart {
+  width: 91.8rem;
+  background-color: #292929;
+  padding: 3.6rem;
+  &-title {
+    width: fit-content;
+    color: $light-grey-color;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 1.2rem;
+    border: 1px solid $light-grey-color;
+    margin-bottom: 3.5rem;
+  }
+  &-container {
+    height: 29rem;
+    padding-left: 6.1rem;
+    padding-bottom: 3.3rem;
+    position: relative;
+  }
+  &-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6.2rem;
+    align-items: flex-start;
+    .line {
+      width: 0%;
+      height: 1px;
+      background-color: $poluton-grey-color;
+    }
+  }
+  &-area-points {
+    position: absolute;
+    width: calc(100% - 16rem);
+    height: 100%;
+    top: 0;
+    left: 5.8rem;
+    z-index: 2;
+  }
+  &-canvas-box {
+    position: absolute;
+    overflow: hidden;
+    width: 0%;
+    height: 100%;
+  }
+  &-area-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  &-animation-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: center;
+    &.axisY {
+      width: 5rem;
+      height: 2.6rem;
+    }
+    &.axisX {
+      width: 4.8rem;
+      height: 2.6rem;
+    }
+    &.tooltip {
+      width: 5.05rem;
+      height: 3.8rem;
+    }
+  }
+  &-animation-box {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    &.axisY {
+      width: 5rem;
+    }
+    &.axisX {
+      width: 4.8rem;
+    }
+    &.tooltip {
+      width: 5.05rem;
+    }
+  }
+  &-data {
+    color: $white-color;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &-axisY-data {
+    display: flex;
+    flex-direction: column;
+    gap: 3.7rem;
+    position: absolute;
+    left: -0.9rem;
+    bottom: 2.5rem;
+    &-element {
+      width: 5rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &-axisX-data {
+    width: 78.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5.8rem;
+    padding-right: 5.3rem;
+    position: absolute;
+    left: 5.8rem;
+    bottom: -0.8rem;
+    &-element {
+      width: 4.8rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &-line {
+    background-color: $light-grey-color;
+    &.chart-axisY-line {
+      width: 2px;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    &.chart-axisX-line {
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &-point-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+  }
+  &-point {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: $poluton-grey-color;
+    border: 0.2rem solid $white-color;
+  }
+  &-tooltip {
+    display: inline-block;
+    width: 5.05rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $black-color;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: $yellow-color;
+    padding: 0.4rem;
+    text-align: center;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 99%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 2.5px solid transparent;
+      border-top: 4px solid $yellow-color;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .chart {
+    width: 71rem;
+    padding: 4rem;
+    &-title {
+      font-size: 2.8rem;
+      padding: 2.4rem;
+      margin-bottom: 6.8rem;
+    }
+    &-container {
+      height: 51.6rem;
+      padding-left: 8.8rem;
+      padding-bottom: 5.2rem;
+    }
+    &-area {
+      gap: 11.6rem;
+    }
+    &-area-points {
+      width: calc(100% - 11rem);
+    }
+    &-area-canvas {
+      padding-left: 6rem;
+      padding-right: 4.6rem;
+    }
+    &-animation-block {
+      &.axisY {
+        width: 8rem;
+        height: 3.6rem;
+      }
+      &.axisX {
+        width: 6.4rem;
+        height: 3.6rem;
+      }
+      &.tooltip {
+        width: 9.2rem;
+        height: 6rem;
+      }
+    }
+    &-animation-box {
+      &.axisY {
+        width: 8rem;
+      }
+      &.axisX {
+        width: 6.4rem;
+      }
+      &.tooltip {
+        width: 9.2rem;
+      }
+    }
+    &-data {
+      font-size: 2.8rem;
+    }
+    &-axisY-data {
+      gap: 8rem;
+      left: -1.6rem;
+      bottom: 3.4rem;
+      &-element {
+        width: 8rem;
+      }
+    }
+    &-axisX-data {
+      width: 54.4rem;
+      padding-left: 4rem;
+      padding-right: 0.8rem;
+      left: 9rem;
+      bottom: -1.6rem;
+      &-element {
+        width: 6.4rem;
+      }
+    }
+    &-point {
+      width: 2rem;
+      height: 2rem;
+      border: 0.4rem solid $white-color;
+    }
+    &-tooltip {
+      width: 9.2rem;
+      font-size: 2.8rem;
+      padding: 0.8rem 1.6rem;
+    }
+  }
+}

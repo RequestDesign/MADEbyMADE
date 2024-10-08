@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { title: "Недвижимость" })
+  <body>
+    @@include('html/header.html', { attr: "marginbottom" })
+    <main class="realty">
+      <section class="realty__section-first">
+        <div class="container realty__container">
+          <p class="realty__title setup--block-title">Недвижимость</p>
+          <div class="realty__content content">
+            <div class="content-left">
+              <div class="swiper swiper-realty">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="swiper-realty__slide">
+                      <img
+                        class="swiper-realty__photo"
+                        src="@img/realty/realty--swiperPhoto-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-realty__slide">
+                      <img
+                        class="swiper-realty__photo"
+                        src="@img/realty/realty--swiperPhoto-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-realty__slide">
+                      <img
+                        class="swiper-realty__photo"
+                        src="@img/realty/realty--swiperPhoto-3.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination swiper-realty-pagination"></div>
+              </div>
+            </div>
+            <!-- _d-center для content-right -->
+            <div class="content-right">
+              <p class="content-right__title setup--block-title">Инвестиции</p>
+              <div class="content-right__info info">
+                <p class="info-title setup--h2">Инвестиции в недвижимость</p>
+                <div class="info-texts">
+                  <div class="info-text setup--text">
+                    <p>
+                      Инвестиция в&nbsp;недвижимость является привлекательным
+                      и&nbsp;надежным способом размещения капитала.
+                    </p>
+                    <p>
+                      Инвестиции в&nbsp;недвижимость позволяют получать
+                      стабильный пассивный доход в&nbsp;виде арендной платы.
+                      Арендаторы обеспечивают постоянный поток денежных средств,
+                      что делает эту инвестицию привлекательной для тех, кто
+                      стремится получать регулярный доход.
+                    </p>
+                  </div>
+                  <div class="info-text setup--text">
+                    <p>
+                      Недвижимость считается одним из&nbsp;самых стабильных
+                      и&nbsp;надежных видов инвестиций. Востребованность жилья
+                      всегда высока.
+                    </p>
+                    <p>
+                      Также, в&nbsp;долгосрочной перспективе стоимость
+                      недвижимости обычно растет.<br />
+                      Это означает, что инвесторы могут получить прибыль при
+                      продаже объекта в&nbsp;будущем.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="realty__section-second">
+        <div class="container realty__container">
+          <p class="realty-type__title setup--section-title">
+            Виды недвижимости
+          </p>
+          <div class="realty-type__content">
+            @@include('html/realty-type-tabs.html', {
+            imgBox:"@img/realty/realty-type--tabsPhoto-2.png",
+            titleBox:"Девелопмент",
+            imgContent:"@img/realty/realty-type--contentPhoto-1.jpg",
+            titleContent:"Девелопмент", 
+            textContent:"Наша экспертная команда активно работает над поиском и анализом таких объектов, чтобы предоставить нашим клиентам лучшие инвестиционные возможности в офисной недвижимости.",
+            textButton:"Проекты" }) 
+
+            @@include('html/realty-type-tabs.html', {
+            imgBox:"@img/realty/realty-type--tabsPhoto-1.png",
+            titleBox:"Управление активами",
+            imgContent:"@img/realty/realty-type--contentPhoto-1.jpg",
+            titleContent:"Девелопмент", 
+            textContent:"Наша экспертная команда активно работает над поиском и анализом таких объектов, чтобы предоставить нашим клиентам лучшие инвестиционные возможности в офисной недвижимости.",
+            textButton:"Проекты" })
+            
+            @@include('html/realty-type-tabs.html', {
+            imgBox:"@img/realty/realty-type--tabsPhoto-2.png",
+            titleBox:"Торговая",
+            imgContent:"@img/realty/realty-type--contentPhoto-1.jpg",
+            titleContent:"Девелопмент", 
+            textContent:"Наша экспертная команда активно работает над поиском и анализом таких объектов, чтобы предоставить нашим клиентам лучшие инвестиционные возможности в офисной недвижимости.",
+            textButton:"Проекты" }) 
+            
+            @@include('html/realty-type-tabs.html', {
+            imgBox:"@img/realty/realty-type--tabsPhoto-1.png",
+            titleBox:"Гостиничная",
+            imgContent:"@img/realty/realty-type--contentPhoto-1.jpg",
+            titleContent:"Девелопмент", 
+            textContent:"Наша экспертная команда активно работает над поиском и анализом таких объектов, чтобы предоставить нашим клиентам лучшие инвестиционные возможности в офисной недвижимости.",
+            textButton:"Проекты"}) 
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html', {}) @@include('html/foot.html',{})
+  </body>
+</html>

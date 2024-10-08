@@ -1,0 +1,224 @@
+.project {
+  &__container {
+    padding-top: 3.5rem;
+    height: 81.5rem;
+  }
+  &__content {
+    display: flex;
+    position: relative;
+    &::before {
+      content: '';
+      width: calc(100% + 7.2rem);
+      height: 0.2rem;
+      position: absolute;
+      bottom: 0;
+      left: -3.6rem;
+      background-color: #252525;
+    }
+    .content {
+      &-left {
+        position: relative;
+        width: 100%;
+        padding-top: 3.8rem;
+        &__title {
+          margin-bottom: 4.5rem;
+        }
+        &__subtitle {
+          margin-bottom: 5.6rem;
+        }
+        &__text {
+          max-width: 76.9rem;
+          width: 100%;
+          color: $light-grey-color;
+        }
+        &::before {
+          content: '';
+          width: 0.2rem;
+          height: calc(100% + 3.8rem);
+          position: absolute;
+          top: -3.8rem;
+          right: 0;
+          background-color: #252525;
+        }
+      }
+      &-right {
+        flex: 1 0;
+        padding-left: 3.6rem;
+        &__photos {
+          width: 72.7rem;
+          height: 63.2rem;
+        }
+        &__info {
+          display: flex;
+          flex-direction: column;
+          gap: 2.3rem;
+          margin: 3.6rem 0;
+          .info {
+            &-address {
+              font-size: 2rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+            &-customers {
+              font-size: 2rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+  }
+  .swiper {
+    &-project {
+      //   width: 72.7rem;
+      &__slide {
+        width: 72.7rem;
+        height: 63.2rem;
+      }
+      &__photo {
+        object-fit: cover;
+        height: 63.2rem;
+      }
+      &-pagination {
+        bottom: 4rem !important;
+      }
+    }
+  }
+  &__statistics {
+    &.desktop {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    &.mobile {
+      display: none;
+    }
+    .statistics {
+      &-box {
+        display: flex;
+        justify-content: space-between;
+        padding: 2.2rem 0;
+        &:not(:last-child) {
+          position: relative;
+          &::before {
+            content: '';
+            width: calc(100% + 3.6rem);
+            height: 0.2rem;
+            position: absolute;
+            bottom: 0;
+            left: -3.6rem;
+            background-color: #252525;
+          }
+        }
+      }
+      &-title {
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        opacity: 0.6;
+      }
+      &-value {
+        color: $yellow-color;
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        padding-right: 3.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .project {
+    &__container {
+      height: auto;
+    }
+    &__content {
+      flex-direction: column;
+      gap: 8rem;
+      &::before {
+        display: none;
+      }
+      .content {
+        &-left {
+          &::before {
+            display: none;
+          }
+        }
+        &-right {
+          padding-left: 0;
+          &__photos {
+            width: 71rem;
+            height: 76.2rem;
+          }
+          &__info {
+            gap: 1.2rem;
+            margin: 4rem 0;
+            .info {
+              &-address {
+                font-size: 2.8rem;
+              }
+              &-customers {
+                font-size: 2.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .swiper {
+      &-project {
+        &__slide {
+          width: 71rem;
+          height: 76.2rem;
+        }
+        &__photo {
+          object-fit: cover;
+          height: 76.2rem;
+        }
+      }
+    }
+    &__statistics {
+      &.desktop {
+        display: none;
+      }
+      &.mobile {
+        display: block;
+      }
+      .statistics {
+        &-box {
+          display: flex;
+          justify-content: space-between;
+          padding: 2.4rem 0;
+          border-bottom: 0.4rem solid #252525;
+          &:first-child {
+            border-top: 0.4rem solid #252525;
+          }
+          &:not(:last-child) {
+            &::before {
+              display: none;
+            }
+          }
+        }
+        &-title {
+          font-size: 2.8rem;
+          font-weight: 400;
+        }
+        &-value {
+          font-size: 2.8rem;
+          font-weight: 400;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

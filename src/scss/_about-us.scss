@@ -1,0 +1,227 @@
+.about-us {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    .content {
+      &-top {
+        &__title {
+          margin-bottom: 3.6rem;
+        }
+        &__text {
+          width: 94.5rem;
+          color: $light-grey-color;
+        }
+      }
+      &-bottom {
+        width: 100%;
+        // height: 43.8rem;
+        // padding: 3.6rem;
+        display: flex;
+        align-items: flex-end;
+        gap: 1.2rem;
+        justify-content: flex-start;
+        // position: relative;
+        // background-image: url('../img/about-us/about-us--backgroundPhoto-desktop.png');
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        &__background {
+          width: 100%;
+          height: 44.8rem;
+          overflow: hidden;
+          > video {
+            object-fit: cover;
+            width: inherit;
+            height: inherit;
+            filter: grayscale(90%);
+          }
+          > img {
+            display: none;
+          }
+        }
+        &__box {
+          position: absolute;
+          bottom: 3.6rem;
+          left: 3.6rem;
+        }
+        &__info {
+          width: 84.6rem;
+          .info {
+            &-title {
+              border-bottom: 0.4rem solid $white-color;
+              padding-bottom: 1.1rem;
+            }
+            &-text {
+              width: 49.5rem;
+              color: $white-color;
+              padding-top: 1.1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__movie {
+    flex: 1 0;
+    position: relative;
+  }
+}
+
+@media (max-width: 48em) {
+  .about-us {
+    &__content {
+      .content {
+        &-top {
+          &__title {
+            margin-bottom: 4rem;
+          }
+          &__text {
+            width: 100%;
+          }
+        }
+        &-bottom {
+          flex-direction: column;
+          // height: 87.6rem;
+          // padding: 8rem 4rem;
+          // background-image: url('../img/about-us/about-us--backgroundPhoto-mobile.png');
+          &__background {
+            height: 87.6rem;
+            > video {
+              display: none;
+            }
+            > img {
+              display: block;
+            }
+          }
+          &__box {
+            flex: 1 0;
+            bottom: 8rem;
+            left: 4rem;
+          }
+          &__info {
+            width: 63rem;
+            .info {
+              &-title {
+                padding-bottom: 2.4rem;
+                border-bottom: 0.3rem solid $white-color;
+              }
+              &-text {
+                width: 100%;
+                padding-top: 2.4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__movie {
+      width: 71rem;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////
+
+.about-us {
+  &-assets {
+    &__content {
+      display: flex;
+      gap: 25.5rem;
+      .content {
+        &-left {
+          width: 67.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          &__title {
+            max-width: 40.5rem;
+            margin-bottom: 2.4rem;
+          }
+          &__text {
+            color: $light-grey-color;
+          }
+        }
+        &-right {
+          flex: 1 0;
+          &__list {
+            border: 0.2rem solid $poluton-grey-color;
+            border-top: none;
+            .list {
+              &-item {
+                display: flex;
+                gap: 4rem;
+                justify-content: flex-start;
+                padding: 3.2rem 3.6rem;
+                &:not(:last-child) {
+                  border-bottom: 0.2rem solid $poluton-grey-color;
+                }
+              }
+              &-info {
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+              }
+              &-text {
+                color: $light-grey-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .about-us {
+    &-assets {
+      &__content {
+        flex-direction: column;
+        gap: 4rem;
+        .content {
+          &-left {
+            width: 100%;
+            flex-direction: column-reverse;
+            gap: 8rem;
+            &__title {
+              max-width: 100%;
+              margin-bottom: 0;
+            }
+            &__text {
+              display: none;
+            }
+          }
+          &-right {
+            &__list {
+              border: 0.3rem solid $poluton-grey-color;
+              border-top: none;
+              .list {
+                &-item {
+                  gap: 3.2rem;
+                  padding: 4rem;
+                  &:not(:last-child) {
+                    border-bottom: 0.3rem solid $poluton-grey-color;
+                  }
+                }
+                &-icon {
+                  svg {
+                    width: 6rem;
+                    height: 6rem;
+                  }
+                }
+                &-info {
+                  gap: 0.8rem;
+                }
+                &-text {
+                  .visibility {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
