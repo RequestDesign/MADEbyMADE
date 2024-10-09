@@ -6,11 +6,13 @@
   "type": "module",
   "scripts": {
     "dev": "gulp",
+    "deploy":  "gh-pages -d dist",
     "svgsprite": "gulp svgsprite"
   },
   "author": "tmffd",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "browser-sync": "^2.29.3",
     "del": "^6.1.1",
     "fs": "^0.0.1-security",
@@ -40,5 +42,8 @@
     "webp-converter": "2.2.3",
     "webpack": "^5.88.2",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    
   }
 }
