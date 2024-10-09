@@ -7,7 +7,7 @@
             flex-direction: column;
             gap: 2rem;
             &-e{
-                padding-top: 2rem;
+                padding: 2rem;
                 border-top: .2rem solid $light-grey-color;
                 display: grid;
                 grid-template-columns: min-content 86rem auto;
@@ -16,10 +16,40 @@
                 @media (max-width: 48em) {
                     grid-template-columns: 100%;
                 }
+                @media (hover: hover){
+                    &:hover{
+                        background-color: $yellow-color;
+                        color: $black-color;
+                        border-color: $yellow-color;
+                       
+                        & .news__c-list-e-img{
+                            filter: grayscale(0);
+                        
+                        }
+                        & .news__c-list-e-link{
+                            & .setup--btn-yellow{
+                                & .text{
+                                    color: $black-color ;
+    
+                                }
+                                & .btn{
+                                    background-color: $black-color;
+                                }
+                                & svg path{
+                                    stroke: $yellow-color;
+                                }
+                              
+                            }
+                        }
+                    }
+                }
+              
                 &-img{
                     width: 30rem;
                     height: 30rem;
                     display: flex;
+                    filter: grayscale(90%);
+                  
                     @media (max-width: 48em) {
                         width: 100%;
                         height: 71rem;
