@@ -16,7 +16,7 @@
                 @media (max-width: 48em) {
                     grid-template-columns: 100%;
                 }
-                @media (hover: hover){
+            
                     &:hover{
                         background-color: $yellow-color;
                         color: $black-color;
@@ -42,7 +42,7 @@
                             }
                         }
                     }
-                }
+               
               
                 &-img{
                     width: 30rem;
