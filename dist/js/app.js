@@ -219,6 +219,7 @@ const swiperProjectFirst = new Swiper('.swiper-project', {
   effect: 'fade',
 });
 
+
 //////////////////////////////// SWIPERS-REALTY //////////////////////////////////
 
 const swiperRealtyFirst = new Swiper('.swiper-realty', {
